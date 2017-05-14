@@ -415,7 +415,7 @@ public class AndroidTreeView {
 
     private static void expand(final View v) {
         v.measure(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        final int targetHeight = v.getMeasuredHeight();
+        final int targetHeight = 0; // v.getMeasuredHeight();
 
         v.getLayoutParams().height = 0;
         v.setVisibility(View.VISIBLE);
